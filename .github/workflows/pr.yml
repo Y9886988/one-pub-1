@@ -5,9 +5,9 @@ on: pull_request
 jobs:
    testing_pr:
      runs-on: ubuntu-latest
-     #environment: Test
+     environment: sample
      steps:
         - name: Test
-          run: echo ${{ secrets.TEST}}
+          run: echo ${{ secrets.TEST1}}
         - name: Testing
-          run: echo "Testing ${{ secrets.TESTING}}"
+          run: echo "Testing ${{ secrets.TEST}}"
